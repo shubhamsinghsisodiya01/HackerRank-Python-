@@ -1,0 +1,7 @@
+if __name__ == '__main__':
+    n = int(raw_input()) // convert string in to integer
+    integer_list = map(int, raw_input().split()) // map the function 
+    print(hash(tuple(integer_list))) // print
+    
+    tuple is same as the list but the difference is tuple cannot change once created.
+    
