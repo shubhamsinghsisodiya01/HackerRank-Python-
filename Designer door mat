@@ -1,0 +1,4 @@
+n, m = map(int,input().split())
+
+shubham_pattern = [(".|."*(2*i+1)).center(m,'-')for i in range(n//2)]
+print ('\n'.join(shubham_pattern + ["WELCOME".center(m,'-')] + shubham_pattern[::-1]))
