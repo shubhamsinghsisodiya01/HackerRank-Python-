@@ -1,0 +1,16 @@
+def minion_game(s):
+    vowels = "AEIOU"
+    kelvin_score = 0
+    stuart_score = 0
+    for i in range (len(s)):
+        if s[i] in vowels:
+            kelvin_score += (len(s)-i)
+        else:
+            stuart_score += (len(s)-i)
+    if kelvin_score > stuart_score:
+        print "Kelvin",kelvin_score
+    elif stuart_score>kelvin_score:
+        print "Stuart", stuart_score
+    else:
+        print "DRAW"
+
