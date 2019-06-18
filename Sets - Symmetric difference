@@ -1,0 +1,8 @@
+a,b=(int(input()),input().split())
+c,d=(int(input()),input().split())
+x=set(b)
+y=set(d)
+diff_num1 = x.difference(y)
+diff_num2 = y.difference(x)
+s = diff_num1.union(diff_num2)
+print ("\n".join(sorted(s,key=int)))
