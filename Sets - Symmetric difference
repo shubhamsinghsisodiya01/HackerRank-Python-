@@ -6,3 +6,18 @@ diff_num1 = x.difference(y)
 diff_num2 = y.difference(x)
 s = diff_num1.union(diff_num2)
 print ("\n".join(sorted(s,key=int)))
+
+
+a1 = set(a)
+b1 = set(b)
+c1 = set(c)
+d1 = set(d)
+count_num1 = a1.intersection(c1)
+count_num2 = b1.intersection(c1)
+sum_lenth = sum(len(count_num1) + len(count_num2))
+count_num3 = a1.intersection(d1)
+count_num4 = b1.intersection(d1)
+sum_lenth1 = sum(len(count_num3) + len(count_num4))
+
+print (sum_lenth-sum_lenth1)
+
