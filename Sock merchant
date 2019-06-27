@@ -1,0 +1,5 @@
+def sockMerchant(n, ar):
+    count_pair = 0
+    for i in set(ar):
+        count_pair += ar.count(i)//2
+    return count_pair
