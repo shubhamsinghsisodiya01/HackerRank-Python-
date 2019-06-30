@@ -1,0 +1,8 @@
+def migratoryBirds(ar):
+    a = ar.count(1)
+    b = ar.count(2)
+    c = ar.count(3)
+    d = ar.count(4)
+    e = ar.count(5)
+    li = [a,b,c,d,e]
+    return (1+li.index(max(li)))
