@@ -1,0 +1,7 @@
+def bonAppetit(bill, k, b):
+    total = sum(bill) - bill[k]
+    total_cost = total//2
+    if(total_cost == b):
+        print('Bon Appetit')
+    else:
+        print(abs(total_cost-b))
