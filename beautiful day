@@ -1,0 +1,9 @@
+def beautifulDays(i, j, k):
+    bDays = 0
+    for b in range(i, j):
+        d = str(b) // change int to str
+        c = d[::-1] // to reverse the string
+        e = int(c) // change str to int
+        if (b-e)%k == 0:
+            bDays += 1
+    return bDays
